@@ -30,7 +30,7 @@ SENSU_EXIT_CRITICAL = 2
     default='fritz',
     type=click.STRING,
     help="influx measurement name [fritz]")
-def main(address, password, uptime, measurement):
+def cli(address, password, uptime, measurement):
 
     # fc = FritzStatus(address=address, password=password)
     fc = FritzStatus(address=address)
@@ -69,4 +69,4 @@ def main(address, password, uptime, measurement):
 
 
 if __name__ == '__main__':
-    main()
+    cli()

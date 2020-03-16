@@ -11,5 +11,10 @@ setup(
     install_requires=[
         'click'
         'fritzconnection',
-    ]
+    ],
+    entry_points = {
+        'console_scripts': [
+            'fritz-metrics=checks.fritz:main',
+        ]
+    }
 )
