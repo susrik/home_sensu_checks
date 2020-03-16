@@ -9,7 +9,7 @@ setup(
     url=('https://github.com'),
     packages=find_packages(),
     install_requires=[
-        'click'
+        'click',
         'fritzconnection',
     ],
     entry_points = {
