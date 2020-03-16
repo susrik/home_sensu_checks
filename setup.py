@@ -14,7 +14,7 @@ setup(
     ],
     entry_points = {
         'console_scripts': [
-            'fritz-metrics=checks.fritz:main',
+            'fritz-metrics=home_checks.fritz:cli',
         ]
     }
 )
