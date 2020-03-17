@@ -65,7 +65,7 @@ def cli(address, uptime, measurement):
         tags=','.join(_key_values(tags)),
         fields=','.join(_key_values(fields))))
 
-    sys.exit(SENSU_EXIT_OK if fc.uptime < uptime else SENSU_EXIT_WARNING)
+    sys.exit(SENSU_EXIT_OK if fc.uptime > uptime else SENSU_EXIT_WARNING)
 
 
 if __name__ == '__main__':
