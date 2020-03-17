@@ -15,11 +15,11 @@ SENSU_EXIT_CRITICAL = 2
     required=True,
     type=click.STRING,
     help="Fritz!Box hostname")
-@click.option(
-    "--password",
-    required=True,
-    type=click.STRING,
-    help="Fritz!Box UPnP password")
+# @click.option(
+#     "--password",
+#     required=True,
+#     type=click.STRING,
+#     help="Fritz!Box UPnP password")
 @click.option(
     "--uptime",
     default=10,
@@ -30,7 +30,7 @@ SENSU_EXIT_CRITICAL = 2
     default='fritz',
     type=click.STRING,
     help="influx measurement name [fritz]")
-def cli(address, password, uptime, measurement):
+def cli(address, uptime, measurement):
 
     # fc = FritzStatus(address=address, password=password)
     fc = FritzStatus(address=address)

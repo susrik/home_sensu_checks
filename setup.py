@@ -5,7 +5,7 @@ with open("README.md") as f:
 
 setup(
     name='home-sensu-checks',
-    version='0.0.1',
+    version='0.0.2',
     author='Erik Reid',
     author_email='merikreid@gmail.com',
     description='Custom checks/metrics for use with Sensu',
